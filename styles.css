@@ -1,0 +1,102 @@
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #6a11cb, #2575fc);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container, .login-container, .upload-container, .share-container {
+  background: white;
+  padding: 2rem 2.5rem;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+  max-width: 480px;
+  width: 100%;
+  animation: fadeIn 0.8s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+h2 {
+  text-align: center;
+  color: #333;
+}
+
+input, select, button {
+  width: 100%;
+  padding: 12px 14px;
+  margin: 12px 0;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  transition: 0.3s;
+}
+
+input:focus, select:focus {
+  border-color: #2575fc;
+  outline: none;
+}
+
+button {
+  background-color: #2575fc;
+  color: white;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #1b5dc9;
+}
+
+.file-drop-area {
+  border: 2px dashed #ccc;
+  padding: 20px;
+  text-align: center;
+  cursor: pointer;
+  margin-bottom: 15px;
+  background-color: #f7f9fb;
+}
+
+#file-preview div {
+  padding: 10px;
+  margin: 5px 0;
+  background-color: #eaf1fe;
+  border-left: 4px solid #2575fc;
+}
+
+#generated-link {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #f4f4f4;
+  word-break: break-word;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+
+.toast {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background: #333;
+  color: #fff;
+  padding: 15px 20px;
+  border-radius: 8px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.5s ease;
+  z-index: 1000;
+}
+
+.toast.show {
+  opacity: 1;
+  pointer-events: auto;
+}
