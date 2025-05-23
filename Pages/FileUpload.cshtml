@@ -1,0 +1,20 @@
+﻿@page
+@model File_Mgr_EF_JWT3.Pages.FileUploadModel
+@{
+}
+<h2>Upload File</h2>
+<form method="post" enctype="multipart/form-data">
+    <input type="file" asp-for="UploadedFile" required />
+    <input type="hidden" name="__RequestVerificationToken" value="@ViewData["AntiForgeryToken"]" />
+    <button type="submit">Upload</button>
+
+    <!-- Progress Bar -->
+    <div id="progressBar" style="width: 0%; height: 20px; background-color: green;"></div>
+</form>
+
+<script>
+    document.querySelector("form").addEventListener("submit", function () {
+        document.getElementById("progressBar").style.width = "100%";
+    });
+</script>
+

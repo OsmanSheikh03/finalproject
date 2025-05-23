@@ -1,0 +1,36 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home";
+}
+
+<div class="text-center mt-5">
+    <h1 class="display-4 text-primary font-weight-bold">Welcome to File Management System</h1>
+    <p class="lead text-dark">Securely store, organize, and share files with our modern solution built using **ASP.NET Core & Razor Pages**.</p>
+</div>
+
+<div class="d-flex justify-content-center mt-5">
+    <!-- Signup Button -->
+    <div class="card mx-3 shadow-lg p-4 text-center" style="width: 18rem;">
+        <img src="~/img/signup-icon.png" alt="Signup" class="card-img-top" />
+        <div class="card-body">
+            <h5 class="card-title">New Here?</h5>
+            <p class="card-text">Create an account to start managing your files.</p>
+            <a class="btn btn-primary btn-lg" asp-area="" asp-page="/Signup">Sign Up</a>
+        </div>
+    </div>
+
+    <!-- Login Button -->
+    <div class="card mx-3 shadow-lg p-4 text-center" style="width: 18rem;">
+        <img src="~/img/login-icon.png" alt="Login" class="card-img-top" />
+        <div class="card-body">
+            <h5 class="card-title">Already a Member?</h5>
+            <p class="card-text">Sign in and access your dashboard.</p>
+            <a class="btn btn-success btn-lg" asp-area="" asp-page="/Login">Login</a>
+        </div>
+    </div>
+</div>
+
+<footer class="text-center mt-5">
+    <p class="text-muted">&copy; 2025 - File Management System | Built with ASP.NET Core & Razor Pages</p>
+</footer>
