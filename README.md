@@ -1,44 +1,20 @@
+# 📁 File Sharing System (ASP.NET Core + EF + JWT)
 
-# File Sharing System (Frontend)
+This is a secure file sharing web application developed using **ASP.NET Core**, **Entity Framework Core**, and **JWT (JSON Web Tokens)** for authentication. It allows users to upload, download, and manage files in a structured and authenticated environment.
 
-This is the frontend implementation of a simple file sharing system. It allows users to:
+## 🚀 Features
 
-- Log in using an email and password.
-- Upload files via drag-and-drop or file browser.
-- Preview selected files before uploading.
-- Generate shareable links with selectable permissions (view/edit).
-- Copy generated links to the clipboard.
+- User registration and JWT-based authentication
+- Upload and download files securely
+- Browse and manage uploaded files
+- Role-based access control (e.g., admin/user)
+- Modular project structure with EF migrations
 
-## Features
+## 🧰 Technologies Used
 
-- Responsive and accessible design
-- File type icons for visual feedback
-- Copy-to-clipboard functionality
-- Frontend-only prototype (can be extended with backend)
-
-## File Structure
-
-`Index.html` | Login page for user authentication 
-`Upload.html` | File upload interface with preview and simulated progress 
-`Share.html` | Link generation page with permission options 
-`styles.css` | Custom styling used by all pages 
-`script.js`  | JavaScript for file handling and interactivity
-
-## Installation
-
-To run locally, clone the repository and open `Index.html`, `Upload.html`, or `Share.html` in a modern browser:
-
-```bash
-git clone https://github.com/OsmanSheikh03/finalproject.git
-cd finalproject
-```
-
-Then double-click one of the HTML files or use a local development server (e.g. Live Server extension in VS Code).
-
-## Future Improvements
-
-- Add backend support with authentication, file storage, and access control.
-- Implement real-time upload progress and file retrieval APIs.
-- Add user dashboard for managing files and shared links.
-- Improve accessibility and browser compatibility.
-
+- ASP.NET Core 9.0
+- Entity Framework Core
+- JWT Authentication
+- Razor Pages
+- SQL Server / LocalDB
+- C#
